@@ -19,6 +19,10 @@
         <strong>{{places.length}}
           pontos</strong>
         encontrados
+        {% if search > "" %}
+          em:
+          {{search}}
+        {% endif %}
       </h4>
 
       <div class="cards">

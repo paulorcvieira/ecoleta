@@ -4,3 +4,4 @@ node_modules
 commands
 *.db
 **/*.db
+.env

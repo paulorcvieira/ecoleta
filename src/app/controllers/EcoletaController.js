@@ -34,7 +34,9 @@ class EcoletaController {
 
     function afterInsertData(error) {
       if (error) {
-        return console.log("DB :: INSERT :: ERROR: ", error);
+        console.log("DB :: INSERT :: ERROR: ", error);
+
+        return res.render("create-point.njk", { error: true });
       }
 
       console.log("DB :: INSERT: Collect Point created with success!");
@@ -45,25 +47,28 @@ class EcoletaController {
 
     // Insert Data
     db.run(query, values, afterInsertData);
-
-
   }
 
   search(req, res) {
 
     const search = req.query.search;
 
-    if (search == "") {
-      return res.render("search-results.njk", { places });
+    if (search === "") {
+      db.all(`SELECT * FROM places`, function (error, places) {
+        if (error) {
+          return console.log("DB :: SELECT ALL :: ERROR: ", error);
+        }
+        return res.render("search-results.njk", { places });
+      });
+    } else {
+      db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function (error, places) {
+        if (error) {
+          return console.log("DB :: SELECT ALL :: ERROR: ", error);
+        }
+
+        return res.render("search-results.njk", { places, search });
+      });
     }
-
-    db.all(`SELECT * FROM places WHERE city LIKE '%${search}%'`, function (error, places) {
-      if (error) {
-        return console.log("DB :: SELECT ALL :: ERROR: ", error);
-      }
-
-      return res.render("search-results.njk", { places });
-    });
 
   };
 }

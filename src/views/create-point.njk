@@ -116,6 +116,10 @@
   {% if saved %}
     {% include("partials/modal-point-saved.njk") %}
   {% endif %}
+
+  {% if error %}
+    {% include("partials/modal-point-error.njk") %}
+  {% endif %}
 {% endblock modal %}
 
 {% block scripts %}
