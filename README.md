@@ -7,13 +7,13 @@
 </h1>
 
 <h3 align="center">
-Project code Next Level Week #1, #Starter of Rocketseat.
+Project Ecoleta - Next Level Week #1, #Starter of Rocketseat.
 
 </h3>
 
 ![Ecoleta](/screenshots/gif-maker.gif)
 
-# O que é a Next Level Week?
+# What is Next Level Week?
 It is a project of teaching programming through the internet, carried out by [Rocketseat](https://rocketseat.com.br/).
 In one week, livestreams are made, access to an event community and video content
 about web development, using tools from front to back end to build a common project. The content is separated into two different tracks:
@@ -26,7 +26,7 @@ Made for newbies developers, the project consists of a complete website, from fr
 
 This repository was made during NLW # 1, which took place from June 1 to 7, 2020, *#Starter*.
 
-# Projeto Ecoleta - Trilha Starter
+# Ecoleta Project - Starter Trail
 <h1 align="center">
 
 ![Ecoleta](./public/assets/icons/logo.svg)
@@ -36,7 +36,17 @@ This repository was made during NLW # 1, which took place from June 1 to 7, 2020
 In this edition, the project developed was the *Ecoleta*, a marketplace for waste collection sites.
 The idea mockup was made available online [aqui](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/).
 
-# Ferramentas utilizadas
+# Start Project
+
+```bash
+$ npm run startProject
+```
+
+# Configurations
+
+Rename the *.env.exemple* file to *.env* and configure your http port.
+
+# Used tools
 * [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
@@ -49,17 +59,17 @@ The idea mockup was made available online [aqui](https://www.figma.com/file/1Sxg
 * [eslint](https://eslint.org/)
 * [prettier](https://prettier.io/)
 
-# Adições pessoais
+# Personal Implements
 Some things that were added in the code, in addition to the content of the video lessons:
 * Improvements of responsive pages;
 * Layout Encapsulations;
 * Signature in the page header;
-* Improvements in search
-* Creation a error modal
-* Folder organization
-* Creating a controller
-* Route management
-* Setting up the development environment
+* Improvements in search;
+* Creation a error modal;
+* Folder organization;
+* Creating a controller;
+* Route management;
+* Setting up the development environment;
 
 # 🔥
 <h6 align="center">
