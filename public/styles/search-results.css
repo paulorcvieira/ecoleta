@@ -1,11 +1,15 @@
+body {
+  background-color: #fff;
+}
 body::after {
   content: "";
-  position: fixed;
-  background: #fff;
-  top: 260px;
+  position: absolute;
+  background: #f0f0f5;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  height: 16rem;
   z-index: -1;
 }
 
@@ -35,7 +39,7 @@ body::after {
 
 #page-search-results header a span {
   margin-right: 16px;
-  background-image: url('../assets/icones/arrow-left.svg');
+  background-image: url('../assets/icons/arrow-left.svg');
 
   display: flex;
 
@@ -47,11 +51,11 @@ main {
   margin: 48px;
 }
 
-main h4 {
+main, h4 {
   font-weight: normal;
   font-family: Roboto, sans-serif;
 
-  margin-bottom: 32px;
+  margin: 32px;
 }
 
 main .cards {

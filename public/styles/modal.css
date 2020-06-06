@@ -33,7 +33,7 @@
 }
 
 #modal .header a {
-  background-image: url('../assets/icones/x.svg');
+  background-image: url('../assets/icons/x.svg');
 
   width: 20px;
   height: 20px;
@@ -53,12 +53,15 @@
 }
 
 #modal form label {
-  font-size: 14px;
-  line-height: 16px;
+  /* font-size: 14px; */
+  /* line-height: 16px; */
+  font-size: 0.01px;
+
+  color: rgba(0, 0, 0, 0);;
 
   display: block;
 
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 #modal form .field {
@@ -94,4 +97,16 @@
 #modal form button:hover {
   /* background-color: #2fb85e; */
   opacity: 0.7;
+}
+
+#modal.point-saved .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal.point-saved h1 {
+  color: #fff;
+
+  margin-top: 32px;
 }

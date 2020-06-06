@@ -9,6 +9,8 @@ router.get("/", EcoletaController.index);
 
 router.get("/create-point", EcoletaController.createPoint);
 
-router.get("/search-results", EcoletaController.searchResults);
+router.post("/create-point", EcoletaController.savePoint);
+
+router.get("/search", EcoletaController.search);
 
 module.exports = router;
